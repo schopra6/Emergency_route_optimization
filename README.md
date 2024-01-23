@@ -11,3 +11,10 @@ have capacity requirements that exceed the capacity of a single vehicle. This ne
 - ensures that the capacity of each ambulance is not exceeded
 - Miller-Tucker-Zemlin (MTZ) constraints to eliminate subtours, i.e., cycling routes that do not pass through the depot.
 - Impose a distance restriction of Dmax on travel between any two nondepot nodes. This is to ensure that the model does not generate routes that are infeasible in the real world.
+
+### Streamlit Application
+
+1. Run `pip install -r requirements.txt` to install all the necessary packages
+2. Run `streamlit run streamlit/app.py` to run the app
+3. Add a depot location, wait for the distance matrix to be calculated, and then add a traffic area
+4. Choose the parameters and run the model
